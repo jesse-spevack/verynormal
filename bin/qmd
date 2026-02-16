@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Wrapper for qmd that runs from its package dir so tsx resolves correctly
+set -euo pipefail
+
+QMD_PKG="$HOME/.asdf/installs/nodejs/22.14.0/lib/node_modules/@tobilu/qmd"
+export ASDF_NODEJS_VERSION=22.14.0
+
+cd "$QMD_PKG"
+exec node --import tsx src/qmd.ts "$@"
