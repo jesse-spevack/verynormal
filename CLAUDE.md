@@ -9,13 +9,14 @@ A single markdown file (`reading-list.md`) tracking software articles Jesse read
 ## Entry Format
 
 ```markdown
-- YYYY-MM-DD [Title](url) — Jesse's one-liner take.
+- YYYY-MM-DD [Title](url) by Author — Jesse's one-liner take.
 ```
 
 - Newest first within each category
 - Categories are `##` headers
+- Author is the person who wrote the article (not the publication)
 - One-liner reflects Jesse's take, not the article's abstract
-- Keep it minimal: title, link, date, one sentence
+- Keep it minimal: title, link, author, date, one sentence
 
 ## Adding an Entry
 
